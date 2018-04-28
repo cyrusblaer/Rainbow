@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cDT-uN-F6C">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--我的-->
+        <scene sceneID="sXZ-Bt-1sT">
+            <objects>
+                <navigationController id="cDT-uN-F6C" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="我的" image="icon_tab_mine_nor" selectedImage="icon_tab_mine_sel" id="aYF-ce-2M0">
+                        <color key="badgeColor" red="0.89411764709999997" green="0.2901960784" blue="0.031372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBarItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="CyT-cQ-rne">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="hsN-wb-bt1" kind="relationship" relationship="rootViewController" id="cPJ-20-cGG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="da5-nN-Zdk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2196" y="935"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="t6F-eu-d3Q">
+            <objects>
+                <viewController id="hsN-wb-bt1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g70-zA-JFp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ljx-LQ-bUL"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="J1M-8o-ede"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oen-gx-Ai9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3004" y="934"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_tab_mine_nor" width="24" height="25"/>
+        <image name="icon_tab_mine_sel" width="24" height="25"/>
+    </resources>
+</document>

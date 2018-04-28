@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SVProgressHUD
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,7 +18,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        SVProgressHUD.setMaximumDismissTimeInterval(1.0)
+        IQKeyboardManager.shared.enable = true
+        
+//        UINavigationBar.appearance().setBackgroundImage(UIImage(), for :.any, barMetrics: .default)
+//        UINavigationBar.appearance().shadowImage = UIImage()
+        
         return true
+        
+        
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

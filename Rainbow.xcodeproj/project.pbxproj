@@ -7,21 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		88A37BE720917CCD00F91873 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A37BE620917CCD00F91873 /* LandingViewController.swift */; };
+		88A37BE92091A57000F91873 /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88A37BE82091A57000F91873 /* Message.storyboard */; };
+		88A37BED2091A5BC00F91873 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88A37BEC2091A5BC00F91873 /* Account.storyboard */; };
+		88A37BF32091ACDF00F91873 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A37BF22091ACDF00F91873 /* LoginViewController.swift */; };
+		88A37BF52091AD5900F91873 /* CustomViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A37BF42091AD5900F91873 /* CustomViews.swift */; };
+		88A37BF82091AE0700F91873 /* Helper File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A37BF72091AE0700F91873 /* Helper File.swift */; };
+		88A37BFB2091C6C300F91873 /* WelcomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A37BFA2091C6C300F91873 /* WelcomViewController.swift */; };
+		88A37BFF2091CFC400F91873 /* Contacts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88A37BFE2091CFC400F91873 /* Contacts.storyboard */; };
+		88B3214A2094091500B34758 /* ConversationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B321492094091500B34758 /* ConversationListViewController.swift */; };
+		88B3214C209421E500B34758 /* ContactsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B3214B209421E500B34758 /* ContactsListViewController.swift */; };
 		88CED4EE209170F00051AE24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CED4ED209170F00051AE24 /* AppDelegate.swift */; };
-		88CED4F0209170F00051AE24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CED4EF209170F00051AE24 /* ViewController.swift */; };
 		88CED4F3209170F00051AE24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88CED4F1209170F00051AE24 /* Main.storyboard */; };
 		88CED4F5209170F10051AE24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88CED4F4209170F10051AE24 /* Assets.xcassets */; };
 		88CED4F8209170F10051AE24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88CED4F6209170F10051AE24 /* LaunchScreen.storyboard */; };
+		C4F881223F0194D15B8C25EC /* Pods_Rainbow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AC46D056E15FEB17BC0FD6 /* Pods_Rainbow.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34AC46D056E15FEB17BC0FD6 /* Pods_Rainbow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rainbow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88A37BE620917CCD00F91873 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
+		88A37BE82091A57000F91873 /* Message.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Message.storyboard; sourceTree = "<group>"; };
+		88A37BEC2091A5BC00F91873 /* Account.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
+		88A37BF22091ACDF00F91873 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		88A37BF42091AD5900F91873 /* CustomViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViews.swift; sourceTree = "<group>"; };
+		88A37BF62091AD8700F91873 /* Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridge-Header.h"; sourceTree = "<group>"; };
+		88A37BF72091AE0700F91873 /* Helper File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Helper File.swift"; sourceTree = "<group>"; };
+		88A37BFA2091C6C300F91873 /* WelcomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomViewController.swift; sourceTree = "<group>"; };
+		88A37BFE2091CFC400F91873 /* Contacts.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Contacts.storyboard; sourceTree = "<group>"; };
+		88B321492094091500B34758 /* ConversationListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationListViewController.swift; sourceTree = "<group>"; };
+		88B3214B209421E500B34758 /* ContactsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListViewController.swift; sourceTree = "<group>"; };
 		88CED4EA209170F00051AE24 /* Rainbow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rainbow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88CED4ED209170F00051AE24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		88CED4EF209170F00051AE24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		88CED4F2209170F00051AE24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		88CED4F4209170F10051AE24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88CED4F7209170F10051AE24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88CED4F9209170F10051AE24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB2FAF8C8B505A9F9F20DE42 /* Pods-Rainbow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rainbow.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rainbow/Pods-Rainbow.release.xcconfig"; sourceTree = "<group>"; };
+		F779DE927CECEBAEF97EB7C6 /* Pods-Rainbow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rainbow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rainbow/Pods-Rainbow.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +52,81 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4F881223F0194D15B8C25EC /* Pods_Rainbow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		889D9EDD20917B4A0016636A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		889D9EDE20917B510016636A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		88A37BE120917C1C00F91873 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		88A37BE320917C2C00F91873 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		88A37BE420917C2F00F91873 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		88A37BE520917C3000F91873 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		88A37BF02091A7A500F91873 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				88CED4F4209170F10051AE24 /* Assets.xcassets */,
+				88CED4F6209170F10051AE24 /* LaunchScreen.storyboard */,
+				88CED4F9209170F10051AE24 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		88A37BF12091A93900F91873 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				88A37BF62091AD8700F91873 /* Bridge-Header.h */,
+				88A37BF72091AE0700F91873 /* Helper File.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		88CED4E1209170F00051AE24 = {
 			isa = PBXGroup;
 			children = (
 				88CED4EC209170F00051AE24 /* Rainbow */,
 				88CED4EB209170F00051AE24 /* Products */,
+				B399008A94953ECE7F804A2A /* Pods */,
+				97D68378F51F8E9E797C7715 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +142,163 @@
 			isa = PBXGroup;
 			children = (
 				88CED4ED209170F00051AE24 /* AppDelegate.swift */,
-				88CED4EF209170F00051AE24 /* ViewController.swift */,
-				88CED4F1209170F00051AE24 /* Main.storyboard */,
-				88CED4F4209170F10051AE24 /* Assets.xcassets */,
-				88CED4F6209170F10051AE24 /* LaunchScreen.storyboard */,
-				88CED4F9209170F10051AE24 /* Info.plist */,
+				88CED4FF209173A60051AE24 /* Main */,
+				88A37BF02091A7A500F91873 /* Supporting Files */,
+				88A37BF12091A93900F91873 /* Helpers */,
 			);
 			path = Rainbow;
+			sourceTree = "<group>";
+		};
+		88CED4FF209173A60051AE24 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				88CED4F1209170F00051AE24 /* Main.storyboard */,
+				88CED500209173AE0051AE24 /* Public */,
+				88CED502209174D10051AE24 /* Messsage */,
+				88CED503209174F30051AE24 /* Contact */,
+				88CED504209175040051AE24 /* Account */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		88CED500209173AE0051AE24 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				88CED5062091797F0051AE24 /* Controllers */,
+				88CED509209179990051AE24 /* Views */,
+				88CED508209179910051AE24 /* Models */,
+				88CED5072091798C0051AE24 /* Services */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		88CED502209174D10051AE24 /* Messsage */ = {
+			isa = PBXGroup;
+			children = (
+				88A37BE82091A57000F91873 /* Message.storyboard */,
+				88CED50E20917B1C0051AE24 /* Controllers */,
+				88CED50D20917B1A0051AE24 /* Models */,
+				88CED50C20917B170051AE24 /* Views */,
+				88CED50B20917B070051AE24 /* Services */,
+			);
+			path = Messsage;
+			sourceTree = "<group>";
+		};
+		88CED503209174F30051AE24 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				88A37BFE2091CFC400F91873 /* Contacts.storyboard */,
+				88F78CB720917BD900A402B4 /* Controllers */,
+				88F78CB620917B8500A402B4 /* Views */,
+				889D9EDE20917B510016636A /* Models */,
+				889D9EDD20917B4A0016636A /* Services */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		88CED504209175040051AE24 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				88A37BEC2091A5BC00F91873 /* Account.storyboard */,
+				88A37BE520917C3000F91873 /* Controllers */,
+				88A37BE420917C2F00F91873 /* Views */,
+				88A37BE320917C2C00F91873 /* Models */,
+				88A37BE120917C1C00F91873 /* Services */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		88CED5062091797F0051AE24 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				88A37BE620917CCD00F91873 /* LandingViewController.swift */,
+				88A37BFA2091C6C300F91873 /* WelcomViewController.swift */,
+				88A37BF22091ACDF00F91873 /* LoginViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		88CED5072091798C0051AE24 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		88CED508209179910051AE24 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		88CED509209179990051AE24 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				88A37BF42091AD5900F91873 /* CustomViews.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		88CED50B20917B070051AE24 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		88CED50C20917B170051AE24 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		88CED50D20917B1A0051AE24 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		88CED50E20917B1C0051AE24 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				88B321492094091500B34758 /* ConversationListViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		88F78CB620917B8500A402B4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		88F78CB720917BD900A402B4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				88B3214B209421E500B34758 /* ContactsListViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		97D68378F51F8E9E797C7715 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34AC46D056E15FEB17BC0FD6 /* Pods_Rainbow.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B399008A94953ECE7F804A2A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F779DE927CECEBAEF97EB7C6 /* Pods-Rainbow.debug.xcconfig */,
+				EB2FAF8C8B505A9F9F20DE42 /* Pods-Rainbow.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +308,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 88CED4FC209170F10051AE24 /* Build configuration list for PBXNativeTarget "Rainbow" */;
 			buildPhases = (
+				DDA3306BFEA990602CCF3932 /* [CP] Check Pods Manifest.lock */,
 				88CED4E6209170F00051AE24 /* Sources */,
 				88CED4E7209170F00051AE24 /* Frameworks */,
 				88CED4E8209170F00051AE24 /* Resources */,
+				418DE959BB04F5549529D146 /* [CP] Embed Pods Frameworks */,
+				8B819446B77C00D4E73F687C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,19 +364,103 @@
 			files = (
 				88CED4F8209170F10051AE24 /* LaunchScreen.storyboard in Resources */,
 				88CED4F5209170F10051AE24 /* Assets.xcassets in Resources */,
+				88A37BE92091A57000F91873 /* Message.storyboard in Resources */,
+				88A37BFF2091CFC400F91873 /* Contacts.storyboard in Resources */,
 				88CED4F3209170F00051AE24 /* Main.storyboard in Resources */,
+				88A37BED2091A5BC00F91873 /* Account.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		418DE959BB04F5549529D146 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Rainbow/Pods-Rainbow-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GRDB.swift/GRDB.framework",
+				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rainbow/Pods-Rainbow-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B819446B77C00D4E73F687C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Rainbow/Pods-Rainbow-resources.sh",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RongCloud.bundle",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/en.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/zh-Hans.lproj",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/Emoji.plist",
+				"${PODS_ROOT}/RongCloudIM/RongCloudIM/RCConfig.plist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RongCloud.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/en.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zh-Hans.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Emoji.plist",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RCConfig.plist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rainbow/Pods-Rainbow-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDA3306BFEA990602CCF3932 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Rainbow-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		88CED4E6209170F00051AE24 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88CED4F0209170F00051AE24 /* ViewController.swift in Sources */,
+				88B3214A2094091500B34758 /* ConversationListViewController.swift in Sources */,
+				88A37BF52091AD5900F91873 /* CustomViews.swift in Sources */,
+				88B3214C209421E500B34758 /* ContactsListViewController.swift in Sources */,
+				88A37BF32091ACDF00F91873 /* LoginViewController.swift in Sources */,
+				88A37BE720917CCD00F91873 /* LandingViewController.swift in Sources */,
+				88A37BF82091AE0700F91873 /* Helper File.swift in Sources */,
 				88CED4EE209170F00051AE24 /* AppDelegate.swift in Sources */,
+				88A37BFB2091C6C300F91873 /* WelcomViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +537,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -267,7 +591,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -278,11 +602,13 @@
 		};
 		88CED4FD209170F10051AE24 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F779DE927CECEBAEF97EB7C6 /* Pods-Rainbow.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GH9HGGE8DT;
 				INFOPLIST_FILE = Rainbow/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,11 +622,13 @@
 		};
 		88CED4FE209170F10051AE24 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB2FAF8C8B505A9F9F20DE42 /* Pods-Rainbow.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GH9HGGE8DT;
 				INFOPLIST_FILE = Rainbow/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
