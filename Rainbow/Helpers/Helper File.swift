@@ -35,3 +35,8 @@ enum LoginPageType {
     case register
     case fillinfo
 }
+
+enum PhotoSource {
+    case library
+    case camera
+}

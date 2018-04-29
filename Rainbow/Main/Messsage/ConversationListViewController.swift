@@ -16,6 +16,7 @@ class ConversationListViewController: UIViewController, UITableViewDelegate, UIT
         super.viewDidLoad()
         self.conversationTableView.delegate = self
         self.conversationTableView.dataSource = self
+        self.conversationTableView.tableFooterView = UIView()
         self.setupNavBar()
     }
 
@@ -27,7 +28,13 @@ class ConversationListViewController: UIViewController, UITableViewDelegate, UIT
     
     //  MARK: - Setup
     func setupNavBar() {
-        self.navigationController?.navigationBar.isHidden = true
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+         self.tabBarController?.tabBar.backgroundImage = UIImage()
+         self.tabBarController?.tabBar.shadowImage = UIImage()
+        self.tabBarController?.tabBar.layer.shadowOffset = CGSize(width: 0, height: -1)
+        self.tabBarController?.tabBar.layer.shadowRadius = 4
+        self.tabBarController?.tabBar.layer.shadowColor = UIColor.black.cgColor
+        self.tabBarController?.tabBar.layer.shadowOpacity = 0.1
     }
 
     //  MARK: - Delegate
@@ -44,7 +51,7 @@ class ConversationListViewController: UIViewController, UITableViewDelegate, UIT
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

@@ -16,13 +16,23 @@ class ContactsListViewController: UIViewController,UISearchBarDelegate,UITableVi
     //  MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.navigationBar.isHidden = true
+        
+        let backBarButton = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
+        self.navigationItem.backBarButtonItem = backBarButton
+        
         self.contactSearchBar.delegate = self
         self.contactTableView.delegate = self
         self.contactTableView.dataSource = self
         self.configureHeaderView()
+        self.contactTableView.tableFooterView = UIView()
     }
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -45,14 +55,26 @@ class ContactsListViewController: UIViewController,UISearchBarDelegate,UITableVi
         groupChatLabel.font = UIFont.init(name: "PingFangSC-Medium", size: 15)
         groupChatView.addSubview(groupChatLabel)
         
-        let groupChatCountLabel = UILabel(frame: CGRect(x: GlobalVariables.kScreenWidth -  100 - 19, y: 27, width: 100, height: 16))
+        let groupChatCountLabel = UILabel(frame: CGRect(x: GlobalVariables.kScreenWidth -  90 - 16, y: 27, width: 90, height: 16))
         groupChatCountLabel.font = UIFont.init(name: "PingFangSC-Medium", size: 12)
         groupChatCountLabel.textColor = UIColor.rbg(r: 197, g: 201, b: 210)
         groupChatCountLabel.text = "共加入0个群聊"
         groupChatView.addSubview(groupChatCountLabel)
-        
+    
         headerContainer.addSubview(groupChatView)
+        
+        let groupChatButton = UIButton.init(frame: CGRect(x: 0, y: 9, width: GlobalVariables.kScreenWidth, height: 70))
+        groupChatButton.backgroundColor = .clear
+        groupChatButton.addTarget(self, action: #selector(self.groupButtonClicked), for: .touchUpInside)
+        headerContainer.insertSubview(groupChatButton, aboveSubview: groupChatView)
+        
         self.contactTableView.tableHeaderView = headerContainer
+    }
+    //  MARK: - Methods
+    @objc func groupButtonClicked() {
+        print("groupButtonClicked")
+        let gropListVC = self.storyboard?.instantiateViewController(withIdentifier: "groupListVC")
+        self.navigationController?.pushViewController(gropListVC!, animated: true)
     }
 
     //  MARK: - Delegate
@@ -84,7 +106,7 @@ class ContactsListViewController: UIViewController,UISearchBarDelegate,UITableVi
 
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         if section == 0 {
-            return 9
+            return 0
         }
         else {
             return 20
@@ -93,9 +115,7 @@ class ContactsListViewController: UIViewController,UISearchBarDelegate,UITableVi
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         if section == 0{
-           let seperator = UIView.init(frame: CGRect(x: 0, y: 0, width: GlobalVariables.kScreenWidth, height: 9))
-            seperator.backgroundColor = GlobalVariables.tableGrey
-            return seperator
+            return UIView()
         }
         else {
             let tagHeader = UIView.init(frame: CGRect(x: 0, y: 0, width: GlobalVariables.kScreenWidth, height: 20))
@@ -115,7 +135,7 @@ class ContactsListViewController: UIViewController,UISearchBarDelegate,UITableVi
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
     /*

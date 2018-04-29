@@ -21,9 +21,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         SVProgressHUD.setMaximumDismissTimeInterval(1.0)
         IQKeyboardManager.shared.enable = true
-        
+    
 //        UINavigationBar.appearance().setBackgroundImage(UIImage(), for :.any, barMetrics: .default)
 //        UINavigationBar.appearance().shadowImage = UIImage()
+//        UINavigationBar.appearance().clipsToBounds = true
+       
         
         return true
         

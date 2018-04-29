@@ -55,7 +55,7 @@ class RoundedButton: UIButton {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        self.bounds.size.height = 42
+//        self.bounds.size.height = 42
         let radius: CGFloat = self.bounds.size.height / 2.0
         self.layer.cornerRadius = radius
         self.clipsToBounds = true

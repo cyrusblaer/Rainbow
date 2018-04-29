@@ -9,6 +9,7 @@
 import UIKit
 import SVProgressHUD
 import Hero
+import Photos
 
 class LoginViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
@@ -47,6 +48,8 @@ class LoginViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     var pickerViewBottomConstraint: NSLayoutConstraint!
     var shouldShowPage: LoginPageType = .login
     var isLoginViewVisible = true
+    
+    let imagePicker = UIImagePickerController()
 
     var regions :[String] = ["中国大陆", "香港","澳门"]
     var phoneRegions : [String] = ["+86", "+852", "+853"]
@@ -178,11 +181,12 @@ class LoginViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
             item.resignFirstResponder()
         }
         // show picker
-        self.pickerViewBottomConstraint.constant = 0
-        self.view.bringSubview(toFront: self.pickerView)
-        UIView.animate(withDuration: 0.4, delay: 0, options: .curveEaseOut, animations: {
-            self.view.layoutIfNeeded()
-        })
+//        self.pickerViewBottomConstraint.constant = 0
+//        self.view.bringSubview(toFront: self.pickerView)
+//        UIView.animate(withDuration: 0.4, delay: 0, options: .curveEaseOut, animations: {
+//            self.view.layoutIfNeeded()
+//        })
+        
     }
     
     @IBAction func donePick(_ sender: Any) {
@@ -238,6 +242,33 @@ class LoginViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         })
     }
     
+    @IBAction func pickProfile(_ sender: Any) {
+        
+        let sheet = UIAlertController(title: nil, message: "Select the source", preferredStyle: .actionSheet)
+        let cameraAction = UIAlertAction(title: "拍照", style: .default, handler: {
+            (alert: UIAlertAction!) -> Void in
+            self.openPhotoPickerWith(source: .camera)
+        })
+        let photoAction = UIAlertAction(title: "相册", style: .default, handler: {
+            (alert: UIAlertAction!) -> Void in
+            self.openPhotoPickerWith(source: .library)
+        })
+        let cancelAction = UIAlertAction(title: "取消", style: .cancel, handler: nil)
+        sheet.addAction(cameraAction)
+        sheet.addAction(photoAction)
+        sheet.addAction(cancelAction)
+        self.present(sheet, animated: true, completion: nil)
+    }
+    
+    //segue回调方法，获取返回参数
+    @IBAction func backSegue(segue : UIStoryboardSegue){
+        //获取返回的控制器
+        let backVC = segue.source as! RegionViewController
+        print(backVC.selectedRegion)
+        //此处需要更新地区选择信息
+        
+    }
+    
     // MARK: - Methods
     func hideAllPopups() {
         for item in inputFields {
@@ -269,6 +300,25 @@ class LoginViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         else
         {
             return false
+        }
+    }
+    
+    func openPhotoPickerWith(source: PhotoSource) {
+        switch source {
+        case .camera:
+            let status = AVCaptureDevice.authorizationStatus(for: AVMediaType.video)
+            if (status == .authorized || status == .notDetermined) {
+                self.imagePicker.sourceType = .camera
+                self.imagePicker.allowsEditing = true
+                self.present(self.imagePicker, animated: true, completion: nil)
+            }
+        case .library:
+            let status = PHPhotoLibrary.authorizationStatus()
+            if (status == .authorized || status == .notDetermined) {
+                self.imagePicker.sourceType = .savedPhotosAlbum
+                self.imagePicker.allowsEditing = true
+                self.present(self.imagePicker, animated: true, completion: nil)
+            }
         }
     }
     

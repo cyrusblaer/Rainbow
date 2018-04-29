@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		889AEA6F2095C2EB00510753 /* RegionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889AEA6E2095C2EB00510753 /* RegionViewController.swift */; };
+		889AEA712095D67000510753 /* AddFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889AEA702095D67000510753 /* AddFriendViewController.swift */; };
+		889AEA732095F0E200510753 /* GroupListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889AEA722095F0E200510753 /* GroupListViewController.swift */; };
+		889AEA752095FCFF00510753 /* GroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889AEA742095FCFF00510753 /* GroupTableViewCell.swift */; };
+		889AEA772095FD6800510753 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889AEA762095FD6800510753 /* ContactTableViewCell.swift */; };
+		889AEA792096066500510753 /* CreateGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889AEA782096066500510753 /* CreateGroupViewController.swift */; };
+		889AEA7B209617D500510753 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889AEA7A209617D500510753 /* MineViewController.swift */; };
+		889AEA7D209623F400510753 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889AEA7C209623F400510753 /* EditProfileViewController.swift */; };
+		889AEA7F209623FE00510753 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889AEA7E209623FE00510753 /* SignInViewController.swift */; };
+		889AEA812096241500510753 /* SafetyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889AEA802096241500510753 /* SafetyViewController.swift */; };
+		889AEA832096242000510753 /* InviteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889AEA822096242000510753 /* InviteViewController.swift */; };
+		889AEA852096242D00510753 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889AEA842096242D00510753 /* SettingViewController.swift */; };
+		889AEA872096258800510753 /* MineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889AEA862096258800510753 /* MineTableViewCell.swift */; };
+		889AEA8920963F2D00510753 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889AEA8820963F2D00510753 /* RecordViewController.swift */; };
 		88A37BE720917CCD00F91873 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A37BE620917CCD00F91873 /* LandingViewController.swift */; };
 		88A37BE92091A57000F91873 /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88A37BE82091A57000F91873 /* Message.storyboard */; };
 		88A37BED2091A5BC00F91873 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88A37BEC2091A5BC00F91873 /* Account.storyboard */; };
@@ -26,6 +40,20 @@
 
 /* Begin PBXFileReference section */
 		34AC46D056E15FEB17BC0FD6 /* Pods_Rainbow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rainbow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		889AEA6E2095C2EB00510753 /* RegionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionViewController.swift; sourceTree = "<group>"; };
+		889AEA702095D67000510753 /* AddFriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendViewController.swift; sourceTree = "<group>"; };
+		889AEA722095F0E200510753 /* GroupListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupListViewController.swift; sourceTree = "<group>"; };
+		889AEA742095FCFF00510753 /* GroupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTableViewCell.swift; sourceTree = "<group>"; };
+		889AEA762095FD6800510753 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		889AEA782096066500510753 /* CreateGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupViewController.swift; sourceTree = "<group>"; };
+		889AEA7A209617D500510753 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		889AEA7C209623F400510753 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		889AEA7E209623FE00510753 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		889AEA802096241500510753 /* SafetyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyViewController.swift; sourceTree = "<group>"; };
+		889AEA822096242000510753 /* InviteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteViewController.swift; sourceTree = "<group>"; };
+		889AEA842096242D00510753 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		889AEA862096258800510753 /* MineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineTableViewCell.swift; sourceTree = "<group>"; };
+		889AEA8820963F2D00510753 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
 		88A37BE620917CCD00F91873 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		88A37BE82091A57000F91873 /* Message.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Message.storyboard; sourceTree = "<group>"; };
 		88A37BEC2091A5BC00F91873 /* Account.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
@@ -90,6 +118,7 @@
 		88A37BE420917C2F00F91873 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				889AEA862096258800510753 /* MineTableViewCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -97,6 +126,13 @@
 		88A37BE520917C3000F91873 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				889AEA7A209617D500510753 /* MineViewController.swift */,
+				889AEA7C209623F400510753 /* EditProfileViewController.swift */,
+				889AEA7E209623FE00510753 /* SignInViewController.swift */,
+				889AEA802096241500510753 /* SafetyViewController.swift */,
+				889AEA822096242000510753 /* InviteViewController.swift */,
+				889AEA842096242D00510753 /* SettingViewController.swift */,
+				889AEA8820963F2D00510753 /* RecordViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -152,7 +188,6 @@
 		88CED4FF209173A60051AE24 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				88CED4F1209170F00051AE24 /* Main.storyboard */,
 				88CED500209173AE0051AE24 /* Public */,
 				88CED502209174D10051AE24 /* Messsage */,
 				88CED503209174F30051AE24 /* Contact */,
@@ -164,6 +199,7 @@
 		88CED500209173AE0051AE24 /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				88CED4F1209170F00051AE24 /* Main.storyboard */,
 				88CED5062091797F0051AE24 /* Controllers */,
 				88CED509209179990051AE24 /* Views */,
 				88CED508209179910051AE24 /* Models */,
@@ -214,6 +250,7 @@
 				88A37BE620917CCD00F91873 /* LandingViewController.swift */,
 				88A37BFA2091C6C300F91873 /* WelcomViewController.swift */,
 				88A37BF22091ACDF00F91873 /* LoginViewController.swift */,
+				889AEA6E2095C2EB00510753 /* RegionViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -272,6 +309,8 @@
 		88F78CB620917B8500A402B4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				889AEA742095FCFF00510753 /* GroupTableViewCell.swift */,
+				889AEA762095FD6800510753 /* ContactTableViewCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -280,6 +319,9 @@
 			isa = PBXGroup;
 			children = (
 				88B3214B209421E500B34758 /* ContactsListViewController.swift */,
+				889AEA702095D67000510753 /* AddFriendViewController.swift */,
+				889AEA722095F0E200510753 /* GroupListViewController.swift */,
+				889AEA782096066500510753 /* CreateGroupViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -453,14 +495,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				889AEA872096258800510753 /* MineTableViewCell.swift in Sources */,
+				889AEA812096241500510753 /* SafetyViewController.swift in Sources */,
+				889AEA7D209623F400510753 /* EditProfileViewController.swift in Sources */,
+				889AEA772095FD6800510753 /* ContactTableViewCell.swift in Sources */,
+				889AEA732095F0E200510753 /* GroupListViewController.swift in Sources */,
+				889AEA8920963F2D00510753 /* RecordViewController.swift in Sources */,
 				88B3214A2094091500B34758 /* ConversationListViewController.swift in Sources */,
+				889AEA832096242000510753 /* InviteViewController.swift in Sources */,
 				88A37BF52091AD5900F91873 /* CustomViews.swift in Sources */,
+				889AEA752095FCFF00510753 /* GroupTableViewCell.swift in Sources */,
+				889AEA712095D67000510753 /* AddFriendViewController.swift in Sources */,
+				889AEA7F209623FE00510753 /* SignInViewController.swift in Sources */,
+				889AEA6F2095C2EB00510753 /* RegionViewController.swift in Sources */,
 				88B3214C209421E500B34758 /* ContactsListViewController.swift in Sources */,
+				889AEA792096066500510753 /* CreateGroupViewController.swift in Sources */,
 				88A37BF32091ACDF00F91873 /* LoginViewController.swift in Sources */,
 				88A37BE720917CCD00F91873 /* LandingViewController.swift in Sources */,
+				889AEA852096242D00510753 /* SettingViewController.swift in Sources */,
 				88A37BF82091AE0700F91873 /* Helper File.swift in Sources */,
 				88CED4EE209170F00051AE24 /* AppDelegate.swift in Sources */,
 				88A37BFB2091C6C300F91873 /* WelcomViewController.swift in Sources */,
+				889AEA7B209617D500510753 /* MineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
