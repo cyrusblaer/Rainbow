@@ -138,6 +138,11 @@ class LoginViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     }
     
     // MARK: - Action
+    
+    @IBAction func sendSMSCodeAction(_ button: UIButton) {
+        button.isSelected = !button.isSelected
+    }
+    
     @IBAction func loginAction(_ button: UIButton) {
         
         self.hideAllPopups()

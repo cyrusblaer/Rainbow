@@ -40,3 +40,9 @@ enum PhotoSource {
     case library
     case camera
 }
+
+enum MessageType {
+    case photo
+    case text
+    case location
+}

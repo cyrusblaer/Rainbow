@@ -25,6 +25,7 @@ class LandingViewController: UIViewController {
         super.viewDidAppear(animated)
         
         let loggedIn = true
+    
         // check login status
         if loggedIn {
             let vc = self.storyboard!.instantiateViewController(withIdentifier: "tabBarVC")

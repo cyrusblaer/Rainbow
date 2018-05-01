@@ -267,13 +267,20 @@
                                 <action selector="loginAction:" destination="XsR-vB-OUu" eventType="touchUpInside" id="gI2-Nh-aAp"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qt1-DV-NqK" customClass="RoundedButtonWithBorder" customModule="Rainbow" customModuleProvider="target">
-                            <rect key="frame" x="235" y="380" width="96" height="27"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qt1-DV-NqK" customClass="RoundedButtonWithBorder" customModule="Rainbow" customModuleProvider="target">
+                            <rect key="frame" x="235" y="373.5" width="96" height="40"/>
                             <constraints>
+                                <constraint firstAttribute="height" constant="40" id="0Im-bU-SWM"/>
                                 <constraint firstAttribute="width" constant="96" id="aVT-sb-CCH"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
-                            <state key="normal" title="获取动态密码"/>
+                            <state key="normal" title="获取动态密码">
+                                <color key="titleColor" red="0.25882352939999997" green="0.25882352939999997" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" title="重新发送" backgroundImage="btn_verification_code_sel"/>
+                            <connections>
+                                <action selector="sendSMSCodeAction:" destination="XsR-vB-OUu" eventType="touchUpInside" id="hcv-oa-PHg"/>
+                            </connections>
                         </button>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="输入动态密码" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MSK-Vc-IqC" customClass="RoundedTextField" customModule="Rainbow" customModuleProvider="target">
                             <rect key="frame" x="44" y="378" width="183" height="30"/>
@@ -431,13 +438,22 @@
                                 <action selector="loginAction:" destination="XsR-vB-OUu" eventType="touchUpInside" id="M8D-r0-xon"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTU-uQ-Nd6" customClass="RoundedButtonWithBorder" customModule="Rainbow" customModuleProvider="target">
-                            <rect key="frame" x="235" y="379.5" width="96" height="27"/>
+                        <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTU-uQ-Nd6" customClass="RoundedButtonWithBorder" customModule="Rainbow" customModuleProvider="target">
+                            <rect key="frame" x="235" y="373" width="96" height="40"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="96" id="2Gp-cM-eL8"/>
+                                <constraint firstAttribute="height" constant="40" id="QAf-gx-WV9"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
-                            <state key="normal" title="获取动态密码"/>
+                            <state key="normal" title="获取动态密码">
+                                <color key="titleColor" red="0.25882352939999997" green="0.25882352939999997" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" title="重新发送" backgroundImage="btn_verification_code_sel">
+                                <color key="titleColor" red="0.25882352939999997" green="0.25882352939999997" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="sendSMSCodeAction:" destination="XsR-vB-OUu" eventType="touchUpInside" id="Yre-FF-Y1A"/>
+                            </connections>
                         </button>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="输入动态密码" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RMZ-O0-DPs" customClass="RoundedTextField" customModule="Rainbow" customModuleProvider="target">
                             <rect key="frame" x="44" y="378" width="183" height="30"/>
@@ -889,6 +905,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="btn_verification_code_sel" width="299" height="126"/>
         <image name="icon_arrow_right_big" width="23" height="41"/>
         <image name="icon_arrow_right_small" width="15" height="29"/>
         <image name="icon_back_nor" width="11" height="18"/>

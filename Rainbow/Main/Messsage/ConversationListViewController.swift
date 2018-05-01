@@ -20,6 +20,11 @@ class ConversationListViewController: UIViewController, UITableViewDelegate, UIT
         self.setupNavBar()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -52,6 +57,8 @@ class ConversationListViewController: UIViewController, UITableViewDelegate, UIT
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "rcConversationVC")
+        self.navigationController?.pushViewController(vc!, animated: true)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

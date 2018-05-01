@@ -32,8 +32,9 @@ class SignInViewController: UIViewController {
     
     // MARK: - Methods
     @objc func pushToRecordVC() {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "recordVC")
-        self.navigationController?.pushViewController(vc!, animated: true)
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "recordVC") as! RecordViewController
+        vc.haveData = false
+        self.navigationController?.pushViewController(vc, animated: true)
         
     }
 

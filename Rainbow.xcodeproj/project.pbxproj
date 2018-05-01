@@ -21,6 +21,12 @@
 		889AEA852096242D00510753 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889AEA842096242D00510753 /* SettingViewController.swift */; };
 		889AEA872096258800510753 /* MineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889AEA862096258800510753 /* MineTableViewCell.swift */; };
 		889AEA8920963F2D00510753 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889AEA8820963F2D00510753 /* RecordViewController.swift */; };
+		889AEA8B2097035200510753 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889AEA8A2097035200510753 /* ChatViewController.swift */; };
+		889AEA8D2097036100510753 /* PersonalDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889AEA8C2097036100510753 /* PersonalDetailViewController.swift */; };
+		889AEA8F20970B9C00510753 /* SetPayCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889AEA8E20970B9C00510753 /* SetPayCodeViewController.swift */; };
+		889AEA912097111900510753 /* ConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889AEA902097111900510753 /* ConversationCell.swift */; };
+		889AEA932097141600510753 /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889AEA922097141600510753 /* ChatCell.swift */; };
+		889AEA9520975B1000510753 /* RCChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889AEA9420975B1000510753 /* RCChatViewController.swift */; };
 		88A37BE720917CCD00F91873 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A37BE620917CCD00F91873 /* LandingViewController.swift */; };
 		88A37BE92091A57000F91873 /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88A37BE82091A57000F91873 /* Message.storyboard */; };
 		88A37BED2091A5BC00F91873 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88A37BEC2091A5BC00F91873 /* Account.storyboard */; };
@@ -54,12 +60,18 @@
 		889AEA842096242D00510753 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		889AEA862096258800510753 /* MineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineTableViewCell.swift; sourceTree = "<group>"; };
 		889AEA8820963F2D00510753 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
+		889AEA8A2097035200510753 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		889AEA8C2097036100510753 /* PersonalDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetailViewController.swift; sourceTree = "<group>"; };
+		889AEA8E20970B9C00510753 /* SetPayCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPayCodeViewController.swift; sourceTree = "<group>"; };
+		889AEA902097111900510753 /* ConversationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationCell.swift; sourceTree = "<group>"; };
+		889AEA922097141600510753 /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
+		889AEA9420975B1000510753 /* RCChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCChatViewController.swift; sourceTree = "<group>"; };
 		88A37BE620917CCD00F91873 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		88A37BE82091A57000F91873 /* Message.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Message.storyboard; sourceTree = "<group>"; };
 		88A37BEC2091A5BC00F91873 /* Account.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
 		88A37BF22091ACDF00F91873 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		88A37BF42091AD5900F91873 /* CustomViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViews.swift; sourceTree = "<group>"; };
-		88A37BF62091AD8700F91873 /* Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridge-Header.h"; sourceTree = "<group>"; };
+		88A37BF62091AD8700F91873 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		88A37BF72091AE0700F91873 /* Helper File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Helper File.swift"; sourceTree = "<group>"; };
 		88A37BFA2091C6C300F91873 /* WelcomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomViewController.swift; sourceTree = "<group>"; };
 		88A37BFE2091CFC400F91873 /* Contacts.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Contacts.storyboard; sourceTree = "<group>"; };
@@ -133,6 +145,7 @@
 				889AEA822096242000510753 /* InviteViewController.swift */,
 				889AEA842096242D00510753 /* SettingViewController.swift */,
 				889AEA8820963F2D00510753 /* RecordViewController.swift */,
+				889AEA8E20970B9C00510753 /* SetPayCodeViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -150,7 +163,7 @@
 		88A37BF12091A93900F91873 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				88A37BF62091AD8700F91873 /* Bridge-Header.h */,
+				88A37BF62091AD8700F91873 /* Bridging-Header.h */,
 				88A37BF72091AE0700F91873 /* Helper File.swift */,
 			);
 			path = Helpers;
@@ -287,6 +300,8 @@
 		88CED50C20917B170051AE24 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				889AEA902097111900510753 /* ConversationCell.swift */,
+				889AEA922097141600510753 /* ChatCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -302,6 +317,9 @@
 			isa = PBXGroup;
 			children = (
 				88B321492094091500B34758 /* ConversationListViewController.swift */,
+				889AEA8A2097035200510753 /* ChatViewController.swift */,
+				889AEA8C2097036100510753 /* PersonalDetailViewController.swift */,
+				889AEA9420975B1000510753 /* RCChatViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -497,13 +515,16 @@
 			files = (
 				889AEA872096258800510753 /* MineTableViewCell.swift in Sources */,
 				889AEA812096241500510753 /* SafetyViewController.swift in Sources */,
+				889AEA8F20970B9C00510753 /* SetPayCodeViewController.swift in Sources */,
 				889AEA7D209623F400510753 /* EditProfileViewController.swift in Sources */,
 				889AEA772095FD6800510753 /* ContactTableViewCell.swift in Sources */,
 				889AEA732095F0E200510753 /* GroupListViewController.swift in Sources */,
+				889AEA912097111900510753 /* ConversationCell.swift in Sources */,
 				889AEA8920963F2D00510753 /* RecordViewController.swift in Sources */,
 				88B3214A2094091500B34758 /* ConversationListViewController.swift in Sources */,
 				889AEA832096242000510753 /* InviteViewController.swift in Sources */,
 				88A37BF52091AD5900F91873 /* CustomViews.swift in Sources */,
+				889AEA932097141600510753 /* ChatCell.swift in Sources */,
 				889AEA752095FCFF00510753 /* GroupTableViewCell.swift in Sources */,
 				889AEA712095D67000510753 /* AddFriendViewController.swift in Sources */,
 				889AEA7F209623FE00510753 /* SignInViewController.swift in Sources */,
@@ -511,12 +532,15 @@
 				88B3214C209421E500B34758 /* ContactsListViewController.swift in Sources */,
 				889AEA792096066500510753 /* CreateGroupViewController.swift in Sources */,
 				88A37BF32091ACDF00F91873 /* LoginViewController.swift in Sources */,
+				889AEA8B2097035200510753 /* ChatViewController.swift in Sources */,
 				88A37BE720917CCD00F91873 /* LandingViewController.swift in Sources */,
+				889AEA9520975B1000510753 /* RCChatViewController.swift in Sources */,
 				889AEA852096242D00510753 /* SettingViewController.swift in Sources */,
 				88A37BF82091AE0700F91873 /* Helper File.swift in Sources */,
 				88CED4EE209170F00051AE24 /* AppDelegate.swift in Sources */,
 				88A37BFB2091C6C300F91873 /* WelcomViewController.swift in Sources */,
 				889AEA7B209617D500510753 /* MineViewController.swift in Sources */,
+				889AEA8D2097036100510753 /* PersonalDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -671,6 +695,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cyrusblaer.Rainbow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Rainbow/Helpers/Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -691,6 +716,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cyrusblaer.Rainbow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Rainbow/Helpers/Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
