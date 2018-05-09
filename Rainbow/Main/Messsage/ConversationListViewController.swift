@@ -22,7 +22,7 @@ class ConversationListViewController: UIViewController, UITableViewDelegate, UIT
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationController?.setNavigationBarHidden(true, animated: true)
+        
         
     }
     override func didReceiveMemoryWarning() {
@@ -33,7 +33,6 @@ class ConversationListViewController: UIViewController, UITableViewDelegate, UIT
     
     //  MARK: - Setup
     func setupNavBar() {
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
          self.tabBarController?.tabBar.backgroundImage = UIImage()
          self.tabBarController?.tabBar.shadowImage = UIImage()
         self.tabBarController?.tabBar.layer.shadowOffset = CGSize(width: 0, height: -1)
