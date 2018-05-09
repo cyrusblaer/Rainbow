@@ -9,10 +9,27 @@
 import UIKit
 
 class RecordViewController: UIViewController {
-
+    
+    @IBOutlet weak var recordTableView: UITableView!
+    
+    @IBOutlet weak var noDataImage: UIImageView!
+    
+    @IBOutlet weak var noDataLabel: UILabel!
+    var haveData: Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        if self.haveData {
+            self.recordTableView.isHidden = false
+            self.noDataImage.isHidden = true
+            self.noDataLabel.isHidden = true
+        }
+        else {
+            self.recordTableView.isHidden = true
+            self.noDataImage.isHidden = false
+            self.noDataLabel.isHidden = false
+        }
         // Do any additional setup after loading the view.
     }
 

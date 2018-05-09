@@ -20,14 +20,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="消息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B6l-Bk-OzT">
-                                <rect key="frame" x="16" y="48" width="55" height="32.5"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="27"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qqa-50-FMW">
-                                <rect key="frame" x="0.0" y="88.5" width="375" height="529.5"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="conversationCell" rowHeight="70" id="2F6-y9-gjn">
@@ -89,8 +83,8 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_boy" translatesAutoresizingMaskIntoConstraints="NO" id="z4S-Mw-tiv">
-                                                    <rect key="frame" x="117" y="18" width="10" height="12"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_boy_big" translatesAutoresizingMaskIntoConstraints="NO" id="z4S-Mw-tiv">
+                                                    <rect key="frame" x="117" y="17.5" width="10" height="13"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="10" id="5g3-iy-W21"/>
                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="12" id="l0v-1C-Tnd"/>
@@ -123,23 +117,21 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="qqa-50-FMW" firstAttribute="leading" secondItem="p4o-kS-3If" secondAttribute="leading" id="2T9-Bb-0hi"/>
-                            <constraint firstItem="B6l-Bk-OzT" firstAttribute="top" secondItem="p4o-kS-3If" secondAttribute="top" constant="28" id="3Xc-Du-KUy"/>
                             <constraint firstItem="qqa-50-FMW" firstAttribute="trailing" secondItem="p4o-kS-3If" secondAttribute="trailing" id="XYD-nc-Jrl"/>
-                            <constraint firstItem="B6l-Bk-OzT" firstAttribute="leading" secondItem="p4o-kS-3If" secondAttribute="leading" constant="16" id="fJV-kh-GoN"/>
+                            <constraint firstItem="qqa-50-FMW" firstAttribute="bottom" secondItem="p4o-kS-3If" secondAttribute="bottom" id="aib-31-YDh"/>
+                            <constraint firstItem="qqa-50-FMW" firstAttribute="top" secondItem="p4o-kS-3If" secondAttribute="top" id="fzb-RC-bhJ"/>
                             <constraint firstItem="qqa-50-FMW" firstAttribute="bottom" secondItem="p4o-kS-3If" secondAttribute="bottom" id="k4Z-Bq-NdR"/>
-                            <constraint firstItem="qqa-50-FMW" firstAttribute="top" secondItem="B6l-Bk-OzT" secondAttribute="bottom" constant="8" id="uQa-ud-SXt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="p4o-kS-3If"/>
                     </view>
                     <navigationItem key="navigationItem" title="消息" largeTitleDisplayMode="always" id="4f8-fM-JfS"/>
-                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="conversationTableView" destination="qqa-50-FMW" id="OyN-e9-COR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lkq-Xu-zsL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="449" y="32"/>
+            <point key="canvasLocation" x="448.80000000000001" y="31.934032983508249"/>
         </scene>
         <!--Chat View Controller-->
         <scene sceneID="qR1-Eg-EuO">
@@ -392,13 +384,30 @@
                                     <constraint firstItem="KK2-r9-oPo" firstAttribute="leading" secondItem="SFZ-uP-6Qw" secondAttribute="leading" constant="30" id="w8v-aD-E6A"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r9K-WM-4Cd" customClass="RoundedButton" customModule="Rainbow" customModuleProvider="target">
-                                <rect key="frame" x="44" y="360" width="287" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r9K-WM-4Cd" customClass="RoundedButtonWithBorder" customModule="Rainbow" customModuleProvider="target">
+                                <rect key="frame" x="44" y="418" width="287" height="42"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="yH7-yk-Gyl"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
-                                <state key="normal" title="加入黑名单" backgroundImage="btn_02_sel">
+                                <state key="normal" title="加入黑名单">
+                                    <color key="titleColor" red="0.89411764709999997" green="0.2901960784" blue="0.031372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="disabled" image="icon_have_signed_in" backgroundImage="btn_have_signed_in">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="action"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xnF-GQ-lh5" customClass="RoundedButton" customModule="Rainbow" customModuleProvider="target">
+                                <rect key="frame" x="44" y="356" width="287" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="xg8-Qp-7ok"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <state key="normal" title="发消息" backgroundImage="btn_02_sel">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <state key="disabled" image="icon_have_signed_in" backgroundImage="btn_have_signed_in">
@@ -411,13 +420,15 @@
                         </subviews>
                         <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="r9K-WM-4Cd" firstAttribute="top" secondItem="xnF-GQ-lh5" secondAttribute="bottom" constant="20" id="1XI-q0-bJ7"/>
                             <constraint firstItem="odK-t0-zjZ" firstAttribute="top" secondItem="YNr-Zd-Wmh" secondAttribute="bottom" id="5pf-kj-OsH"/>
                             <constraint firstItem="odK-t0-zjZ" firstAttribute="leading" secondItem="WRH-Zh-YpH" secondAttribute="leading" id="C0A-lD-D9D"/>
-                            <constraint firstItem="r9K-WM-4Cd" firstAttribute="top" secondItem="SFZ-uP-6Qw" secondAttribute="bottom" constant="53" id="GG7-WI-pzG"/>
                             <constraint firstItem="odK-t0-zjZ" firstAttribute="trailing" secondItem="WRH-Zh-YpH" secondAttribute="trailing" id="HWi-92-fuB"/>
                             <constraint firstItem="YNr-Zd-Wmh" firstAttribute="leading" secondItem="WRH-Zh-YpH" secondAttribute="leading" id="KnM-Be-7I7"/>
                             <constraint firstItem="D3b-kW-aYr" firstAttribute="trailing" secondItem="WRH-Zh-YpH" secondAttribute="trailing" id="Ofy-0l-haV"/>
+                            <constraint firstItem="xnF-GQ-lh5" firstAttribute="top" secondItem="SFZ-uP-6Qw" secondAttribute="bottom" constant="49" id="PdL-mp-ee2"/>
                             <constraint firstItem="WRH-Zh-YpH" firstAttribute="trailing" secondItem="r9K-WM-4Cd" secondAttribute="trailing" constant="44" id="S0k-7I-7g4"/>
+                            <constraint firstItem="WRH-Zh-YpH" firstAttribute="trailing" secondItem="xnF-GQ-lh5" secondAttribute="trailing" constant="44" id="SYD-x2-LXD"/>
                             <constraint firstItem="esC-cj-PPY" firstAttribute="leading" secondItem="WRH-Zh-YpH" secondAttribute="leading" id="YU1-cP-MNq"/>
                             <constraint firstItem="YNr-Zd-Wmh" firstAttribute="trailing" secondItem="WRH-Zh-YpH" secondAttribute="trailing" id="ZYv-99-dSD"/>
                             <constraint firstItem="esC-cj-PPY" firstAttribute="trailing" secondItem="WRH-Zh-YpH" secondAttribute="trailing" id="dk7-TR-pY4"/>
@@ -428,6 +439,7 @@
                             <constraint firstItem="D3b-kW-aYr" firstAttribute="top" secondItem="WRH-Zh-YpH" secondAttribute="top" id="l22-lB-FHT"/>
                             <constraint firstItem="SFZ-uP-6Qw" firstAttribute="top" secondItem="esC-cj-PPY" secondAttribute="bottom" constant="12" id="mlM-jO-qpD"/>
                             <constraint firstItem="SFZ-uP-6Qw" firstAttribute="leading" secondItem="WRH-Zh-YpH" secondAttribute="leading" id="wO7-rS-aXy"/>
+                            <constraint firstItem="xnF-GQ-lh5" firstAttribute="leading" secondItem="WRH-Zh-YpH" secondAttribute="leading" constant="44" id="xXe-Pb-Z0k"/>
                             <constraint firstItem="YNr-Zd-Wmh" firstAttribute="top" secondItem="D3b-kW-aYr" secondAttribute="bottom" constant="12" id="yhc-kw-Yd1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WRH-Zh-YpH"/>
@@ -446,7 +458,7 @@
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="BJG-eL-jEW">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BJG-eL-jEW">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -478,7 +490,7 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="597"/>
                                 <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Sender" rowHeight="61" id="hDu-Vk-ObC" customClass="SenderCell" customModule="QuickChat" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Sender" rowHeight="61" id="hDu-Vk-ObC" customClass="SenderCell" customModule="Rainbow" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="61"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hDu-Vk-ObC" id="9Ei-A5-4c7">
@@ -503,7 +515,7 @@
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
                                                 </textView>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="81B-CF-ljo" customClass="RoundedImageView" customModule="QuickChat" customModuleProvider="target">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="81B-CF-ljo" customClass="RoundedImageView" customModule="Rainbow" customModuleProvider="target">
                                                     <rect key="frame" x="10" y="19" width="36" height="36"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="36" id="7Nn-Lz-KI2"/>
@@ -529,7 +541,7 @@
                                             <outlet property="profilePic" destination="81B-CF-ljo" id="6sq-um-und"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Receiver" rowHeight="60" id="6yY-yz-R3K" customClass="ReceiverCell" customModule="QuickChat" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Receiver" rowHeight="60" id="6yY-yz-R3K" customClass="ReceiverCell" customModule="Rainbow" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="89" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6yY-yz-R3K" id="N4V-b7-q7z">
@@ -818,7 +830,7 @@
         <image name="btn_have_signed_in" width="909" height="126"/>
         <image name="button_seleted_bg" width="375" height="42"/>
         <image name="icon_arrow_right_big" width="23" height="41"/>
-        <image name="icon_boy" width="8" height="11"/>
+        <image name="icon_boy_big" width="14" height="13"/>
         <image name="icon_expression_nor" width="66" height="66"/>
         <image name="icon_expression_sel" width="66" height="66"/>
         <image name="icon_have_signed_in" width="18" height="18"/>
@@ -827,8 +839,8 @@
         <image name="icon_more_sel" width="66" height="66"/>
         <image name="icon_photo_nor" width="180" height="180"/>
         <image name="icon_shot_nor" width="180" height="180"/>
-        <image name="icon_tab_news_nor" width="18" height="17"/>
-        <image name="icon_tab_news_sel" width="18" height="17"/>
+        <image name="icon_tab_news_nor" width="25" height="22"/>
+        <image name="icon_tab_news_sel" width="25" height="22"/>
         <image name="icon_transfer_nor" width="180" height="180"/>
     </resources>
 </document>

@@ -29,7 +29,6 @@ class ContactsListViewController: UIViewController,UISearchBarDelegate,UITableVi
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationController?.setNavigationBarHidden(true, animated: true)
         
     }
     
@@ -51,7 +50,7 @@ class ContactsListViewController: UIViewController,UISearchBarDelegate,UITableVi
         groupChatView.addSubview(groupImage)
         
         let groupChatLabel = UILabel(frame: CGRect(x: 70 , y: 27, width: 50, height: 16))
-        groupChatLabel.text = "群聊"
+        groupChatLabel.text = "我的群聊"
         groupChatLabel.font = UIFont.init(name: "PingFangSC-Medium", size: 15)
         groupChatView.addSubview(groupChatLabel)
         
@@ -68,7 +67,7 @@ class ContactsListViewController: UIViewController,UISearchBarDelegate,UITableVi
         groupChatButton.addTarget(self, action: #selector(self.groupButtonClicked), for: .touchUpInside)
         headerContainer.insertSubview(groupChatButton, aboveSubview: groupChatView)
         
-        self.contactTableView.tableHeaderView = headerContainer
+//        self.contactTableView.tableHeaderView = headerContainer
     }
     //  MARK: - Methods
     @objc func groupButtonClicked() {
@@ -93,7 +92,7 @@ class ContactsListViewController: UIViewController,UISearchBarDelegate,UITableVi
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0{
-            return 1
+            return 3
         }
         else {
             return 2
@@ -129,9 +128,17 @@ class ContactsListViewController: UIViewController,UISearchBarDelegate,UITableVi
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "contactCell", for: indexPath)
         
-        return cell
+        if indexPath.section == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "conversationCell", for: indexPath)
+            return cell
+        }
+        else {
+        
+            let cell = tableView.dequeueReusableCell(withIdentifier: "contactCell", for: indexPath)
+            return cell
+        }
+        
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
