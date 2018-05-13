@@ -39,6 +39,9 @@ class ConversationListViewController: UIViewController, UITableViewDelegate, UIT
         self.tabBarController?.tabBar.layer.shadowRadius = 4
         self.tabBarController?.tabBar.layer.shadowColor = UIColor.black.cgColor
         self.tabBarController?.tabBar.layer.shadowOpacity = 0.1
+        let icon = UIImage.init(named: "icon_back_nor")?.withRenderingMode(.alwaysOriginal)
+        let backButton = UIBarButtonItem(image: icon, style: .plain, target: self, action: nil)
+//        self.navigationItem.backBarButtonItem = backButton
     }
 
     //  MARK: - Delegate
@@ -56,8 +59,15 @@ class ConversationListViewController: UIViewController, UITableViewDelegate, UIT
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "rcConversationVC")
-        self.navigationController?.pushViewController(vc!, animated: true)
+        if indexPath.section == 0 {
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "groupChatVC")
+            self.navigationController?.pushViewController(vc!, animated: true)
+        }
+        else {
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "rcConversationVC")
+            self.navigationController?.pushViewController(vc!, animated: true)
+        }
+        
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

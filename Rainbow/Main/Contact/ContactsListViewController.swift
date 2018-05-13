@@ -17,8 +17,9 @@ class ContactsListViewController: UIViewController,UISearchBarDelegate,UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let backBarButton = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
-        self.navigationItem.backBarButtonItem = backBarButton
+        let icon = UIImage.init(named: "icon_back_nor")?.withRenderingMode(.alwaysOriginal)
+        let backButton = UIBarButtonItem(image: icon, style: .plain, target: self, action: nil)
+        self.navigationItem.leftBarButtonItem = backButton
         
         self.contactSearchBar.delegate = self
         self.contactTableView.delegate = self
@@ -129,8 +130,22 @@ class ContactsListViewController: UIViewController,UISearchBarDelegate,UITableVi
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        if indexPath.section == 0 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "conversationCell", for: indexPath)
+        if indexPath.section == 0 && indexPath.row == 0 {
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: "newContactCell", for: indexPath) as! NewContactTableViewCell
+            cell.type = "newFriend"
+            cell.unread = 0
+            return cell
+        }
+        else if indexPath.section == 0 && indexPath.row == 1 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "newContactCell", for: indexPath) as! NewContactTableViewCell
+            cell.type = "myGroup"
+            return cell
+        }
+            
+        else if indexPath.section == 0 && indexPath.row == 2 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "contactCell", for: indexPath) as! ContactTableViewCell
+            cell.isOfficial = true
             return cell
         }
         else {

@@ -41,6 +41,8 @@
 		88CED4F3209170F00051AE24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88CED4F1209170F00051AE24 /* Main.storyboard */; };
 		88CED4F5209170F10051AE24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88CED4F4209170F10051AE24 /* Assets.xcassets */; };
 		88CED4F8209170F10051AE24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88CED4F6209170F10051AE24 /* LaunchScreen.storyboard */; };
+		88E9A94620A820AB00820763 /* NewContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E9A94520A820AB00820763 /* NewContactTableViewCell.swift */; };
+		88E9A94820A8629B00820763 /* GroupChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E9A94720A8629B00820763 /* GroupChatViewController.swift */; };
 		C4F881223F0194D15B8C25EC /* Pods_Rainbow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AC46D056E15FEB17BC0FD6 /* Pods_Rainbow.framework */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +85,8 @@
 		88CED4F4209170F10051AE24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88CED4F7209170F10051AE24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88CED4F9209170F10051AE24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88E9A94520A820AB00820763 /* NewContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewContactTableViewCell.swift; sourceTree = "<group>"; };
+		88E9A94720A8629B00820763 /* GroupChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupChatViewController.swift; sourceTree = "<group>"; };
 		EB2FAF8C8B505A9F9F20DE42 /* Pods-Rainbow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rainbow.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rainbow/Pods-Rainbow.release.xcconfig"; sourceTree = "<group>"; };
 		F779DE927CECEBAEF97EB7C6 /* Pods-Rainbow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rainbow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rainbow/Pods-Rainbow.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -320,6 +324,7 @@
 				889AEA8A2097035200510753 /* ChatViewController.swift */,
 				889AEA8C2097036100510753 /* PersonalDetailViewController.swift */,
 				889AEA9420975B1000510753 /* RCChatViewController.swift */,
+				88E9A94720A8629B00820763 /* GroupChatViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -329,6 +334,7 @@
 			children = (
 				889AEA742095FCFF00510753 /* GroupTableViewCell.swift */,
 				889AEA762095FD6800510753 /* ContactTableViewCell.swift */,
+				88E9A94520A820AB00820763 /* NewContactTableViewCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -526,12 +532,14 @@
 				88A37BF52091AD5900F91873 /* CustomViews.swift in Sources */,
 				889AEA932097141600510753 /* ChatCell.swift in Sources */,
 				889AEA752095FCFF00510753 /* GroupTableViewCell.swift in Sources */,
+				88E9A94620A820AB00820763 /* NewContactTableViewCell.swift in Sources */,
 				889AEA712095D67000510753 /* AddFriendViewController.swift in Sources */,
 				889AEA7F209623FE00510753 /* SignInViewController.swift in Sources */,
 				889AEA6F2095C2EB00510753 /* RegionViewController.swift in Sources */,
 				88B3214C209421E500B34758 /* ContactsListViewController.swift in Sources */,
 				889AEA792096066500510753 /* CreateGroupViewController.swift in Sources */,
 				88A37BF32091ACDF00F91873 /* LoginViewController.swift in Sources */,
+				88E9A94820A8629B00820763 /* GroupChatViewController.swift in Sources */,
 				889AEA8B2097035200510753 /* ChatViewController.swift in Sources */,
 				88A37BE720917CCD00F91873 /* LandingViewController.swift in Sources */,
 				889AEA9520975B1000510753 /* RCChatViewController.swift in Sources */,

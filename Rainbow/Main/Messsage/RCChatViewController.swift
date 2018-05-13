@@ -12,13 +12,13 @@ class RCChatViewController: RCConversationViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationController?.setNavigationBarHidden(false, animated: true)
         
         self.navigationItem.setHidesBackButton(false, animated: false)
         let icon = UIImage.init(named: "icon_back_nor")?.withRenderingMode(.alwaysOriginal)
         let backButton = UIBarButtonItem(image: icon, style: .plain, target: self, action: #selector(self.dismissSelf))
         self.navigationItem.leftBarButtonItem = backButton
         
+        self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
         self.chatSessionInputBarControl.emojiButton.setBackgroundImage(UIImage(named: "icon_expression_sel"), for: .normal)
         self.chatSessionInputBarControl.emojiButton.setBackgroundImage(UIImage(named: "icon_expression_sel"), for: .selected)
         self.chatSessionInputBarControl.emojiButton.setBackgroundImage(UIImage(named: "icon_expression_sel"), for: .highlighted)
