@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		889475D120A9173A003B9FCE /* GroupDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889475D020A9173A003B9FCE /* GroupDetailViewController.swift */; };
+		889475D520A936DF003B9FCE /* MemberCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889475D420A936DF003B9FCE /* MemberCollectionViewCell.swift */; };
 		889AEA6F2095C2EB00510753 /* RegionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889AEA6E2095C2EB00510753 /* RegionViewController.swift */; };
 		889AEA712095D67000510753 /* AddFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889AEA702095D67000510753 /* AddFriendViewController.swift */; };
 		889AEA732095F0E200510753 /* GroupListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889AEA722095F0E200510753 /* GroupListViewController.swift */; };
@@ -48,6 +50,8 @@
 
 /* Begin PBXFileReference section */
 		34AC46D056E15FEB17BC0FD6 /* Pods_Rainbow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rainbow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		889475D020A9173A003B9FCE /* GroupDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDetailViewController.swift; sourceTree = "<group>"; };
+		889475D420A936DF003B9FCE /* MemberCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberCollectionViewCell.swift; sourceTree = "<group>"; };
 		889AEA6E2095C2EB00510753 /* RegionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionViewController.swift; sourceTree = "<group>"; };
 		889AEA702095D67000510753 /* AddFriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendViewController.swift; sourceTree = "<group>"; };
 		889AEA722095F0E200510753 /* GroupListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupListViewController.swift; sourceTree = "<group>"; };
@@ -306,6 +310,7 @@
 			children = (
 				889AEA902097111900510753 /* ConversationCell.swift */,
 				889AEA922097141600510753 /* ChatCell.swift */,
+				889475D420A936DF003B9FCE /* MemberCollectionViewCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -325,6 +330,7 @@
 				889AEA8C2097036100510753 /* PersonalDetailViewController.swift */,
 				889AEA9420975B1000510753 /* RCChatViewController.swift */,
 				88E9A94720A8629B00820763 /* GroupChatViewController.swift */,
+				889475D020A9173A003B9FCE /* GroupDetailViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -523,6 +529,7 @@
 				889AEA812096241500510753 /* SafetyViewController.swift in Sources */,
 				889AEA8F20970B9C00510753 /* SetPayCodeViewController.swift in Sources */,
 				889AEA7D209623F400510753 /* EditProfileViewController.swift in Sources */,
+				889475D120A9173A003B9FCE /* GroupDetailViewController.swift in Sources */,
 				889AEA772095FD6800510753 /* ContactTableViewCell.swift in Sources */,
 				889AEA732095F0E200510753 /* GroupListViewController.swift in Sources */,
 				889AEA912097111900510753 /* ConversationCell.swift in Sources */,
@@ -542,6 +549,7 @@
 				88E9A94820A8629B00820763 /* GroupChatViewController.swift in Sources */,
 				889AEA8B2097035200510753 /* ChatViewController.swift in Sources */,
 				88A37BE720917CCD00F91873 /* LandingViewController.swift in Sources */,
+				889475D520A936DF003B9FCE /* MemberCollectionViewCell.swift in Sources */,
 				889AEA9520975B1000510753 /* RCChatViewController.swift in Sources */,
 				889AEA852096242D00510753 /* SettingViewController.swift in Sources */,
 				88A37BF82091AE0700F91873 /* Helper File.swift in Sources */,

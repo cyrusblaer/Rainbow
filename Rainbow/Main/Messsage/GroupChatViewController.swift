@@ -9,14 +9,13 @@
 import UIKit
 
 class GroupChatViewController: UIViewController {
-
-    @IBOutlet var navigationTitleView: UIView!
     
-    
+    @IBOutlet weak var memberCollectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.memberCollectionView.delegate = self
+        self.memberCollectionView.dataSource = self
         
-        self.navigationItem.titleView?.addSubview(self.navigationTitleView)
         // Do any additional setup after loading the view.
     }
 
@@ -71,17 +70,35 @@ class GroupChatViewController: UIViewController {
     }
     
     @objc func pushToGroupDetailView() {
-        
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "groupDetailVC")
+        self.navigationController?.pushViewController(vc!, animated: true)
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+
+// MARK: - Collecton View Delegete
+
+extension GroupChatViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "memberCell", for: indexPath)
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let contactsStoryboard = UIStoryboard(name: "Contacts", bundle: Bundle.main)
+        let vc = contactsStoryboard.instantiateViewController(withIdentifier: "userProfileVC")
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+}
+
+

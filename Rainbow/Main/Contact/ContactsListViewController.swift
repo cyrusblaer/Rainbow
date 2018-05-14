@@ -17,10 +17,6 @@ class ContactsListViewController: UIViewController,UISearchBarDelegate,UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let icon = UIImage.init(named: "icon_back_nor")?.withRenderingMode(.alwaysOriginal)
-        let backButton = UIBarButtonItem(image: icon, style: .plain, target: self, action: nil)
-        self.navigationItem.leftBarButtonItem = backButton
-        
         self.contactSearchBar.delegate = self
         self.contactTableView.delegate = self
         self.contactTableView.dataSource = self
