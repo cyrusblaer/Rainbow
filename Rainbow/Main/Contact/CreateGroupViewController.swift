@@ -102,7 +102,7 @@ class CreateGroupViewController: UIViewController,UISearchBarDelegate,UITableVie
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
         if section == 0 {
-            let header = UIView.init(frame: CGRect(x: 0, y: 0, width: GlobalVariables.kScreenWidth, height: 12))
+            let header = UIView.init(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: 12))
             header.backgroundColor = .white
             let label = UILabel(frame: CGRect(x: 17, y: 0, width: 60, height: 12))
             label.textColor = UIColor.rbg(r: 28, g: 3, b: 40)
@@ -111,7 +111,7 @@ class CreateGroupViewController: UIViewController,UISearchBarDelegate,UITableVie
             header.addSubview(label)
             return header
         } else {
-            let header = UIView.init(frame: CGRect(x: 0, y: 0, width: GlobalVariables.kScreenWidth, height: 12))
+            let header = UIView.init(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: 12))
             header.backgroundColor = GlobalVariables.tableGrey
             return header
         }

@@ -70,7 +70,7 @@ class GroupListViewController: UIViewController,UISearchBarDelegate,UITableViewD
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
     
-        let header = UIView.init(frame: CGRect(x: 0, y: 0, width: GlobalVariables.kScreenWidth, height: 15))
+        let header = UIView.init(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: 15))
         header.backgroundColor = GlobalVariables.tableGrey
         return header
         

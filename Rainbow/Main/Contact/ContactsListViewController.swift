@@ -37,10 +37,10 @@ class ContactsListViewController: UIViewController,UISearchBarDelegate,UITableVi
     //  MARK: - Setup
     func configureHeaderView() {
      
-        let headerContainer = UIView(frame: CGRect(x: 0, y: 0, width: GlobalVariables.kScreenWidth, height: 88))
+        let headerContainer = UIView(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: 88))
         headerContainer.backgroundColor = GlobalVariables.tableGrey
         
-        let groupChatView = UIView.init(frame: CGRect(x: 0, y: 9, width: GlobalVariables.kScreenWidth, height: 70))
+        let groupChatView = UIView.init(frame: CGRect(x: 0, y: 9, width: kScreenWidth, height: 70))
         groupChatView.backgroundColor = .white
         let groupImage = UIImageView.init(frame: CGRect(x: 16, y: 15, width: 40, height: 40))
         groupImage.image = UIImage(named: "icon_group_chat")
@@ -51,7 +51,7 @@ class ContactsListViewController: UIViewController,UISearchBarDelegate,UITableVi
         groupChatLabel.font = UIFont.init(name: "PingFangSC-Medium", size: 15)
         groupChatView.addSubview(groupChatLabel)
         
-        let groupChatCountLabel = UILabel(frame: CGRect(x: GlobalVariables.kScreenWidth -  90 - 16, y: 27, width: 90, height: 16))
+        let groupChatCountLabel = UILabel(frame: CGRect(x: kScreenWidth -  90 - 16, y: 27, width: 90, height: 16))
         groupChatCountLabel.font = UIFont.init(name: "PingFangSC-Medium", size: 12)
         groupChatCountLabel.textColor = UIColor.rbg(r: 197, g: 201, b: 210)
         groupChatCountLabel.text = "共加入0个群聊"
@@ -59,7 +59,7 @@ class ContactsListViewController: UIViewController,UISearchBarDelegate,UITableVi
     
         headerContainer.addSubview(groupChatView)
         
-        let groupChatButton = UIButton.init(frame: CGRect(x: 0, y: 9, width: GlobalVariables.kScreenWidth, height: 70))
+        let groupChatButton = UIButton.init(frame: CGRect(x: 0, y: 9, width: kScreenWidth, height: 70))
         groupChatButton.backgroundColor = .clear
         groupChatButton.addTarget(self, action: #selector(self.groupButtonClicked), for: .touchUpInside)
         headerContainer.insertSubview(groupChatButton, aboveSubview: groupChatView)
@@ -114,7 +114,7 @@ class ContactsListViewController: UIViewController,UISearchBarDelegate,UITableVi
             return UIView()
         }
         else {
-            let tagHeader = UIView.init(frame: CGRect(x: 0, y: 0, width: GlobalVariables.kScreenWidth, height: 20))
+            let tagHeader = UIView.init(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: 20))
             
             let tagLabel = UILabel.init(frame: CGRect(x: 16, y: 6, width: 12, height: 10))
             tagLabel.text = "A"

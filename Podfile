@@ -6,6 +6,7 @@ target 'Rainbow' do
 
 	pod 'Hero'
 	pod 'Alamofire'
+    pod 'Cache'
 	pod 'SVProgressHUD'
     pod 'IQKeyboardManagerSwift'
 	pod 'RongCloudIM/IMLib'

@@ -43,6 +43,16 @@
 		88CED4F3209170F00051AE24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88CED4F1209170F00051AE24 /* Main.storyboard */; };
 		88CED4F5209170F10051AE24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88CED4F4209170F10051AE24 /* Assets.xcassets */; };
 		88CED4F8209170F10051AE24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88CED4F6209170F10051AE24 /* LaunchScreen.storyboard */; };
+		88D6323720DA391C00E0BC60 /* Macros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D6323620DA391C00E0BC60 /* Macros.swift */; };
+		88D6324420DA3AD300E0BC60 /* BaseNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D6323A20DA3AD300E0BC60 /* BaseNetwork.swift */; };
+		88D6324520DA3AD300E0BC60 /* CacheKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D6323C20DA3AD300E0BC60 /* CacheKey.swift */; };
+		88D6324620DA3AD300E0BC60 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D6323D20DA3AD300E0BC60 /* Networking.swift */; };
+		88D6324720DA3AD300E0BC60 /* UploadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D6323E20DA3AD300E0BC60 /* UploadManager.swift */; };
+		88D6324820DA3AD300E0BC60 /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D6323F20DA3AD300E0BC60 /* DownloadManager.swift */; };
+		88D6324920DA3AD300E0BC60 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D6324020DA3AD300E0BC60 /* RequestManager.swift */; };
+		88D6324A20DA3AD300E0BC60 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D6324120DA3AD300E0BC60 /* CacheManager.swift */; };
+		88D6324B20DA3AD300E0BC60 /* NetworkValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D6324220DA3AD300E0BC60 /* NetworkValue.swift */; };
+		88D6324C20DA3AD300E0BC60 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D6324320DA3AD300E0BC60 /* UserDefaults.swift */; };
 		88E9A94620A820AB00820763 /* NewContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E9A94520A820AB00820763 /* NewContactTableViewCell.swift */; };
 		88E9A94820A8629B00820763 /* GroupChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E9A94720A8629B00820763 /* GroupChatViewController.swift */; };
 		C4F881223F0194D15B8C25EC /* Pods_Rainbow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AC46D056E15FEB17BC0FD6 /* Pods_Rainbow.framework */; };
@@ -89,6 +99,16 @@
 		88CED4F4209170F10051AE24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88CED4F7209170F10051AE24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88CED4F9209170F10051AE24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88D6323620DA391C00E0BC60 /* Macros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Macros.swift; sourceTree = "<group>"; };
+		88D6323A20DA3AD300E0BC60 /* BaseNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNetwork.swift; sourceTree = "<group>"; };
+		88D6323C20DA3AD300E0BC60 /* CacheKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheKey.swift; sourceTree = "<group>"; };
+		88D6323D20DA3AD300E0BC60 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		88D6323E20DA3AD300E0BC60 /* UploadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadManager.swift; sourceTree = "<group>"; };
+		88D6323F20DA3AD300E0BC60 /* DownloadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
+		88D6324020DA3AD300E0BC60 /* RequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		88D6324120DA3AD300E0BC60 /* CacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		88D6324220DA3AD300E0BC60 /* NetworkValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkValue.swift; sourceTree = "<group>"; };
+		88D6324320DA3AD300E0BC60 /* UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		88E9A94520A820AB00820763 /* NewContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewContactTableViewCell.swift; sourceTree = "<group>"; };
 		88E9A94720A8629B00820763 /* GroupChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupChatViewController.swift; sourceTree = "<group>"; };
 		EB2FAF8C8B505A9F9F20DE42 /* Pods-Rainbow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rainbow.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rainbow/Pods-Rainbow.release.xcconfig"; sourceTree = "<group>"; };
@@ -198,6 +218,7 @@
 		88CED4EC209170F00051AE24 /* Rainbow */ = {
 			isa = PBXGroup;
 			children = (
+				88D6323220DA38E800E0BC60 /* Expand */,
 				88CED4ED209170F00051AE24 /* AppDelegate.swift */,
 				88CED4FF209173A60051AE24 /* Main */,
 				88A37BF02091A7A500F91873 /* Supporting Files */,
@@ -335,6 +356,47 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
+		88D6323220DA38E800E0BC60 /* Expand */ = {
+			isa = PBXGroup;
+			children = (
+				88D6323420DA390600E0BC60 /* Category */,
+				88D6323320DA390200E0BC60 /* Tools */,
+				88D6323620DA391C00E0BC60 /* Macros.swift */,
+			);
+			path = Expand;
+			sourceTree = "<group>";
+		};
+		88D6323320DA390200E0BC60 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				88D6323A20DA3AD300E0BC60 /* BaseNetwork.swift */,
+				88D6323B20DA3AD300E0BC60 /* Networking */,
+				88D6324320DA3AD300E0BC60 /* UserDefaults.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		88D6323420DA390600E0BC60 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		88D6323B20DA3AD300E0BC60 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				88D6323C20DA3AD300E0BC60 /* CacheKey.swift */,
+				88D6323D20DA3AD300E0BC60 /* Networking.swift */,
+				88D6323E20DA3AD300E0BC60 /* UploadManager.swift */,
+				88D6323F20DA3AD300E0BC60 /* DownloadManager.swift */,
+				88D6324020DA3AD300E0BC60 /* RequestManager.swift */,
+				88D6324120DA3AD300E0BC60 /* CacheManager.swift */,
+				88D6324220DA3AD300E0BC60 /* NetworkValue.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		88F78CB620917B8500A402B4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -454,6 +516,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Rainbow/Pods-Rainbow-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Cache/Cache.framework",
 				"${BUILT_PRODUCTS_DIR}/GRDB.swift/GRDB.framework",
 				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
@@ -463,6 +526,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cache.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRDB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
@@ -525,19 +589,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88D6324B20DA3AD300E0BC60 /* NetworkValue.swift in Sources */,
 				889AEA872096258800510753 /* MineTableViewCell.swift in Sources */,
+				88D6324520DA3AD300E0BC60 /* CacheKey.swift in Sources */,
 				889AEA812096241500510753 /* SafetyViewController.swift in Sources */,
 				889AEA8F20970B9C00510753 /* SetPayCodeViewController.swift in Sources */,
 				889AEA7D209623F400510753 /* EditProfileViewController.swift in Sources */,
 				889475D120A9173A003B9FCE /* GroupDetailViewController.swift in Sources */,
 				889AEA772095FD6800510753 /* ContactTableViewCell.swift in Sources */,
 				889AEA732095F0E200510753 /* GroupListViewController.swift in Sources */,
+				88D6324C20DA3AD300E0BC60 /* UserDefaults.swift in Sources */,
 				889AEA912097111900510753 /* ConversationCell.swift in Sources */,
 				889AEA8920963F2D00510753 /* RecordViewController.swift in Sources */,
 				88B3214A2094091500B34758 /* ConversationListViewController.swift in Sources */,
+				88D6324720DA3AD300E0BC60 /* UploadManager.swift in Sources */,
 				889AEA832096242000510753 /* InviteViewController.swift in Sources */,
 				88A37BF52091AD5900F91873 /* CustomViews.swift in Sources */,
 				889AEA932097141600510753 /* ChatCell.swift in Sources */,
+				88D6324A20DA3AD300E0BC60 /* CacheManager.swift in Sources */,
 				889AEA752095FCFF00510753 /* GroupTableViewCell.swift in Sources */,
 				88E9A94620A820AB00820763 /* NewContactTableViewCell.swift in Sources */,
 				889AEA712095D67000510753 /* AddFriendViewController.swift in Sources */,
@@ -545,13 +614,18 @@
 				889AEA6F2095C2EB00510753 /* RegionViewController.swift in Sources */,
 				88B3214C209421E500B34758 /* ContactsListViewController.swift in Sources */,
 				889AEA792096066500510753 /* CreateGroupViewController.swift in Sources */,
+				88D6324620DA3AD300E0BC60 /* Networking.swift in Sources */,
+				88D6324420DA3AD300E0BC60 /* BaseNetwork.swift in Sources */,
 				88A37BF32091ACDF00F91873 /* LoginViewController.swift in Sources */,
 				88E9A94820A8629B00820763 /* GroupChatViewController.swift in Sources */,
+				88D6324820DA3AD300E0BC60 /* DownloadManager.swift in Sources */,
 				889AEA8B2097035200510753 /* ChatViewController.swift in Sources */,
 				88A37BE720917CCD00F91873 /* LandingViewController.swift in Sources */,
 				889475D520A936DF003B9FCE /* MemberCollectionViewCell.swift in Sources */,
 				889AEA9520975B1000510753 /* RCChatViewController.swift in Sources */,
+				88D6324920DA3AD300E0BC60 /* RequestManager.swift in Sources */,
 				889AEA852096242D00510753 /* SettingViewController.swift in Sources */,
+				88D6323720DA391C00E0BC60 /* Macros.swift in Sources */,
 				88A37BF82091AE0700F91873 /* Helper File.swift in Sources */,
 				88CED4EE209170F00051AE24 /* AppDelegate.swift in Sources */,
 				88A37BFB2091C6C300F91873 /* WelcomViewController.swift in Sources */,
@@ -705,10 +779,7 @@
 				DEVELOPMENT_TEAM = GH9HGGE8DT;
 				INFOPLIST_FILE = Rainbow/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cyrusblaer.Rainbow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Rainbow/Helpers/Bridging-Header.h";
@@ -726,10 +797,7 @@
 				DEVELOPMENT_TEAM = GH9HGGE8DT;
 				INFOPLIST_FILE = Rainbow/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cyrusblaer.Rainbow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Rainbow/Helpers/Bridging-Header.h";

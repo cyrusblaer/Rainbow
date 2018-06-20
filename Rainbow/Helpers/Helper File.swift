@@ -15,8 +15,6 @@ struct GlobalVariables {
     static let orange = UIColor.rbg(r: 228, g: 74, b: 8)
     static let grey = UIColor.rbg(r: 241, g: 242, b: 245)
     static let tableGrey = UIColor.rbg(r: 235, g: 237, b: 240)
-    static let kScreenWidth = UIScreen.main.bounds.width
-    static let kScreenHeight = UIScreen.main.bounds.height
 }
 
 //Extensions

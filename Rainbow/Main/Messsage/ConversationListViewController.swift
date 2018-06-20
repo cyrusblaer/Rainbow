@@ -76,7 +76,7 @@ class ConversationListViewController: UIViewController, UITableViewDelegate, UIT
     
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         if section == 0 {
-            let seperator = UIView.init(frame: CGRect(x: 0, y: 0, width: GlobalVariables.kScreenWidth, height: 10))
+            let seperator = UIView.init(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: 10))
             seperator.backgroundColor = GlobalVariables.tableGrey
             return seperator
         }
